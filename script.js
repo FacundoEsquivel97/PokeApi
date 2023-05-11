@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clone.querySelector('.stats .speed').innerHTML = `SPEED ${pokemon.stats[5].base_stat}`
     
         const favButton = clone.getElementById('buttonFav');
+        favButton.innerHTML =  `NO FAV <i class="nes-icon heart is-small is-empty"></i>`
         favButton.addEventListener('click',() => {
           favear(pokemon)
         });

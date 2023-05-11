@@ -1,28 +1,36 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Titulo</title>
+        <title>PokeTeam</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/5c896dea64.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="container-b">
+        <header class="nes-container is-dark is-centered">
+            <div class="header-title"><i class="nes-pokeball"></i> POKE TEAM <i class="nes-pokeball"></i></div>
+            <p>Elige tus pokemon favoritos y guardalos para tener siempre sus stats a mano</p>
+            
+      </header>
+        <article class="container-b">
         <div class="buscador">
-            <input id="buscador" type='text'><button id="buscadorB">Buscar</button>
+            <input id="buscador" type='text' class="nes-input"><button id="buscadorB" class="nes-btn">Buscar</button>
+            </div>
+        <div class="rContainer"><button id="randomB" type="button" class="nes-btn">Random</button>
         </div>
-        <div class="container"></div>
-        <br>
-        <button id="randomB">Random</button>
-        <div class="favoritos"></div>
-        </div>
+        <div class="container "></div>
+        </article>
+        <section class="favoritos"></section>
+        <footer class="nes-container">Hecho por Facundo Esquivel<a href="https://github.com/FacundoEsquivel97" target="_blank"> <i class="nes-icon github is-small"></i> </a><a href="https://www.linkedin.com/in/facundo-esquivel-38ab7b223" target="_blank"> <i class="nes-icon linkedin is-small"></i> </a></footer>
         <template id="tmp">
-            <div class="pokemon">
+            <div class="pokemon-container">
+            <div class="nes-container is-dark is-rounded is-centered pokemon">
                 <img class="front_sprite" src="">
-                <button id="buttonFav">FAV ♥</button>
-            <div class="name"></div>
-            <div class="type"></div>
-            <div class="stats">
+               
+            <div class="name nes-container is-dark is-rounded is-centered"></div>
+            <div class="type nes-container is-dark is-rounded"></div>
+            <div class="stats nes-container is-dark is-rounded">
                 <div class="hp"></div>
                 <div class="attack"></div>
                 <div class="defense"></div>
@@ -31,6 +39,9 @@
                 <div class="speed"></div>
             </div>
             </div>
+              <button type="button" id="buttonFav"class="nes-btn">FAV <i class="nes-icon heart is-small"></i></button>
+              </div>
+            
         </template>
     </body>
 </html>
